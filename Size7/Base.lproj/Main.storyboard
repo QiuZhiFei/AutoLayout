@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Size7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IGY-6A-dcR">
+                                <rect key="frame" x="200" y="20" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="cE9-G4-hZT"/>
+                                    <constraint firstAttribute="width" constant="200" id="fXB-IO-R5R"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IGY-6A-dcR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3Zv-Gj-T3C"/>
+                            <constraint firstAttribute="centerX" secondItem="IGY-6A-dcR" secondAttribute="centerX" id="eJx-X9-hfa"/>
+                            <constraint firstItem="IGY-6A-dcR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tnM-uE-6W6"/>
+                            <constraint firstItem="IGY-6A-dcR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yqO-jt-ohS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Zv-Gj-T3C"/>
+                                <exclude reference="eJx-X9-hfa"/>
+                                <exclude reference="tnM-uE-6W6"/>
+                                <exclude reference="yqO-jt-ohS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="3Zv-Gj-T3C"/>
+                                <exclude reference="eJx-X9-hfa"/>
+                                <include reference="tnM-uE-6W6"/>
+                                <include reference="yqO-jt-ohS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="3Zv-Gj-T3C"/>
+                                <exclude reference="eJx-X9-hfa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="3Zv-Gj-T3C"/>
+                                <include reference="eJx-X9-hfa"/>
+                                <exclude reference="yqO-jt-ohS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
